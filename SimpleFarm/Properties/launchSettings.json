@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "SimpleFarm": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
