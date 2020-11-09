@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.EventLog;
 using SimpleFarm.Config;
 using SimpleFarm.Process;
 using SimpleFarm.Worker;
@@ -17,6 +18,7 @@ namespace SimpleFarm
                 {
                     logging.ClearProviders();
                     logging.AddConsole();
+                    logging.AddEventLog();
                 })
                 // Essential to run this as a window service
                 .UseWindowsService()
